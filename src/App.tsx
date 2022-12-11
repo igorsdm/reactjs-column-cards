@@ -1,8 +1,8 @@
-import { ChallengeComponent } from './ChallengeComponent'
+import { ChallengeContainer } from 'components/ChallengeContainer'
 
 export const App = () => {
   return (
-    <>
+    <div className="app-container">
       <header>
         <h1>Welcome To The Every.io Code Challenge.</h1>
         <div>
@@ -16,8 +16,8 @@ export const App = () => {
         </div>
       </header>
       <main>
-        <ChallengeComponent />
+        <ChallengeContainer />
       </main>
-    </>
+    </div>
   )
 }
