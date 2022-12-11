@@ -1,4 +1,5 @@
 import { ChallengeContainer } from 'components/ChallengeContainer'
+import { ToDoContextProvider } from 'context/toDoList'
 
 export const App = () => {
   return (
@@ -16,7 +17,9 @@ export const App = () => {
         </div>
       </header>
       <main>
-        <ChallengeContainer />
+        <ToDoContextProvider>
+          <ChallengeContainer />
+        </ToDoContextProvider>
       </main>
     </div>
   )
